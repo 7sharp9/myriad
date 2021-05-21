@@ -1,0 +1,203 @@
+<html class="js csstransforms3d">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Myriad | MSBuild usage
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://moiraesoftware.github.io/myriad//static/images/favicon.png"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/nucleus.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/fontawesome-all.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/hybrid.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/featherlight.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/perfect-scrollbar.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/auto-complete.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/atom-one-dark-reasonable.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/theme.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/tips.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/atom-one-dark.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/theme-red.css"/>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <nav id="sidebar">
+      <div id="header-wrapper">
+        <div id="header">
+          <h2 id="logo">
+            Myriad
+          </h2>
+        </div>
+        <div class="searchbox">
+          <label for="search-by">
+            <i class="fas fa-search"></i>
+          </label>
+          <input data-search-input="" id="search-by" type="search" placeholder="Search..."/>
+          <span data-search-clear="">
+            <i class="fas fa-times"></i>
+          </span>
+        </div>
+        <script type="text/javascript" src="https://moiraesoftware.github.io/myriad//static/js/lunr.min.js"></script>
+        <script type="text/javascript" src="https://moiraesoftware.github.io/myriad//static/js/auto-complete.js"></script>
+        <script type="text/javascript">
+          var baseurl ='https://moiraesoftware.github.io/myriad/'
+        </script>
+        <script type="text/javascript" src="https://moiraesoftware.github.io/myriad//static/js/search.js"></script>
+      </div>
+      <div class="highlightable">
+        <ul class="topics">
+          <li id="menu-tutorials" class="dd-item menu-group-link menu-group-link-active">
+            <a>
+              Tutorials
+            </a>
+          </li>
+          <li id="menu-howtos" class="dd-item menu-group-link">
+            <a>
+              How-To Guides
+            </a>
+          </li>
+          <li id="menu-refs" class="dd-item menu-group-link">
+            <a>
+              API References
+            </a>
+          </li>
+        </ul>
+        <ul id="submenu-tutorials" class="submenu submenu-active">
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//index.html" class="padding">
+              Myriad Overview
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/msbuild-usage.html" class="active-link padding">
+              MSBuild usage
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/external-plugins.html" class="padding">
+              External Plugins
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/debugging.html" class="padding">
+              Debugging
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/configuration.html" class="padding">
+              Configuration And Plugins
+            </a>
+          </li>
+        </ul>
+        <ul id="submenu-howtos" class="submenu">
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/record-fields.html" class="padding">
+              Record Extensions
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/du-extensions.html" class="padding">
+              DU Extensions
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/lenses.html" class="padding">
+              Lenses
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/creating-a-generator.html" class="padding">
+              Creating a Generator
+            </a>
+          </li>
+        </ul>
+        <ul id="submenu-refs" class="submenu">
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//reference/Myriad.Core/index.html" class="padding">
+              Myriad.Core
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//reference/Myriad.Plugins/index.html" class="padding">
+              Myriad.Plugins
+            </a>
+          </li>
+        </ul>
+        <section id="shortcuts">
+          <h3>
+            Shortcuts
+          </h3>
+          <ul>
+            <li>
+              <a class="padding" href="/">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a class="padding" href="https://github.com/MoiraeSoftware/myriad">
+                <i class="fab fa-github"></i>
+                GitHub repo
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section id="footer">
+          <p>Built with <a href="https://github.com/ionide/Fornax">Fornax</a>
+        </section>
+      </div>
+    </nav>
+    <section id="body">
+      <div id="overlay"></div>
+      <div class="padding highlightable">
+        <div id="body-inner">
+          <span id="sidebar-toggle-span">
+            <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+              <i class="fas fa-bars"></i>
+               navigation
+            </a>
+          </span>
+          <h1>MSBuild usage</h1>
+<p>Plugins for Myriad are supplied by simply including the nuget package in your project, the nuget infrastructure supplies the necessary MSBuild props and targets so that the plugin is used by Myriad automatically. Following the source for the fields plugin can be used as reference until more details about authoring plugins is created.</p>
+<p>To use Myriad via its MSBuild support you add the <code>Myriad.Core</code> and <code>Myriad.Sdk</code> package references:</p>
+<table class="pre"><tr><td class="snippet"><pre class="fssnip highlighted"><code lang="xml">    <span class="k">&lt;</span><span class="i">ItemGroup</span><span class="k">&gt;</span>
+      <span class="k">&lt;</span><span class="i">PackageReference</span> <span class="o">Include</span><span class="k">="Myriad.Core"</span> <span class="o">Version</span><span class="k">="0.5.1"</span> <span class="k">/&gt;</span>
+      <span class="k">&lt;</span><span class="i">PackageReference</span> <span class="o">Include</span><span class="k">="Myriad.Sdk"</span> <span class="o">Version</span><span class="k">="0.5.1"</span> <span class="k">/&gt;</span>
+      <span class="k">&lt;</span><span class="i">PackageReference</span> <span class="o">Include</span><span class="k">="Myriad.Plugins"</span> <span class="o">Version</span><span class="k">="0.5.1"</span> <span class="k">/&gt;</span> <span class="c">&lt;!-- Built in set of plugins --&gt;</span>
+    <span class="k">&lt;/</span><span class="i">ItemGroup</span><span class="k">&gt;</span>
+</code></pre></td></tr></table>
+<p>An input file is specified by using the usual <code>Compile</code> element:</p>
+<table class="pre"><tr><td class="snippet"><pre class="fssnip highlighted"><code lang="xml"><span class="k">&lt;</span><span class="i">Compile</span> <span class="o">Include</span><span class="k">="Generated.fs"</span><span class="k">&gt;</span>
+    <span class="k">&lt;</span><span class="i">MyriadFile</span><span class="k">&gt;</span>Library.fs<span class="k">&lt;/</span><span class="i">MyriadFile</span><span class="k">&gt;</span>
+<span class="k">&lt;/</span><span class="i">Compile</span><span class="k">&gt;</span>
+</code></pre></td></tr></table>
+<p>This is configuring Myriad so that a file called <code>Generated.fs</code> will be included in the build using <code>Library.fs</code> as input.</p>
+<p>Myriad works by using plugins to generate code.  A plugin called fields is included with Myriad which takes inspiration from OCamls <a href="https://github.com/janestreet/ppx_fields_conv">ppx<em>fields</em>conv</a> plugin of the same name.  There are also plugins included to generate discriminated union helpers adn record lenses.</p>
+
+
+        </div>
+      </div>
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/clipboard.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/perfect-scrollbar.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/jquery.sticky.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/featherlight.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/modernizr.custom-3.6.0.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/learn.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/hugo-learn.js"></script>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/mermaid/mermaid.css"/>
+    <script src="https://moiraesoftware.github.io/myriad//static/mermaid/mermaid.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/languages/fsharp.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/tips.js"></script>
+  </body>
+</html>

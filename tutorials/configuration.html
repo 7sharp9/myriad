@@ -1,0 +1,240 @@
+<html class="js csstransforms3d">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Myriad | Configuration And Plugins
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://moiraesoftware.github.io/myriad//static/images/favicon.png"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/nucleus.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/fontawesome-all.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/hybrid.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/featherlight.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/perfect-scrollbar.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/auto-complete.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/atom-one-dark-reasonable.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/theme.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/tips.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/atom-one-dark.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/theme-red.css"/>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <nav id="sidebar">
+      <div id="header-wrapper">
+        <div id="header">
+          <h2 id="logo">
+            Myriad
+          </h2>
+        </div>
+        <div class="searchbox">
+          <label for="search-by">
+            <i class="fas fa-search"></i>
+          </label>
+          <input data-search-input="" id="search-by" type="search" placeholder="Search..."/>
+          <span data-search-clear="">
+            <i class="fas fa-times"></i>
+          </span>
+        </div>
+        <script type="text/javascript" src="https://moiraesoftware.github.io/myriad//static/js/lunr.min.js"></script>
+        <script type="text/javascript" src="https://moiraesoftware.github.io/myriad//static/js/auto-complete.js"></script>
+        <script type="text/javascript">
+          var baseurl ='https://moiraesoftware.github.io/myriad/'
+        </script>
+        <script type="text/javascript" src="https://moiraesoftware.github.io/myriad//static/js/search.js"></script>
+      </div>
+      <div class="highlightable">
+        <ul class="topics">
+          <li id="menu-tutorials" class="dd-item menu-group-link menu-group-link-active">
+            <a>
+              Tutorials
+            </a>
+          </li>
+          <li id="menu-howtos" class="dd-item menu-group-link">
+            <a>
+              How-To Guides
+            </a>
+          </li>
+          <li id="menu-refs" class="dd-item menu-group-link">
+            <a>
+              API References
+            </a>
+          </li>
+        </ul>
+        <ul id="submenu-tutorials" class="submenu submenu-active">
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//index.html" class="padding">
+              Myriad Overview
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/msbuild-usage.html" class="padding">
+              MSBuild usage
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/external-plugins.html" class="padding">
+              External Plugins
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/debugging.html" class="padding">
+              Debugging
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/configuration.html" class="active-link padding">
+              Configuration And Plugins
+            </a>
+          </li>
+        </ul>
+        <ul id="submenu-howtos" class="submenu">
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/record-fields.html" class="padding">
+              Record Extensions
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/du-extensions.html" class="padding">
+              DU Extensions
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/lenses.html" class="padding">
+              Lenses
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/creating-a-generator.html" class="padding">
+              Creating a Generator
+            </a>
+          </li>
+        </ul>
+        <ul id="submenu-refs" class="submenu">
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//reference/Myriad.Core/index.html" class="padding">
+              Myriad.Core
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//reference/Myriad.Plugins/index.html" class="padding">
+              Myriad.Plugins
+            </a>
+          </li>
+        </ul>
+        <section id="shortcuts">
+          <h3>
+            Shortcuts
+          </h3>
+          <ul>
+            <li>
+              <a class="padding" href="/">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a class="padding" href="https://github.com/MoiraeSoftware/myriad">
+                <i class="fab fa-github"></i>
+                GitHub repo
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section id="footer">
+          <p>Built with <a href="https://github.com/ionide/Fornax">Fornax</a>
+        </section>
+      </div>
+    </nav>
+    <section id="body">
+      <div id="overlay"></div>
+      <div class="padding highlightable">
+        <div id="body-inner">
+          <span id="sidebar-toggle-span">
+            <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+              <i class="fas fa-bars"></i>
+               navigation
+            </a>
+          </span>
+          <h1>Configuration</h1>
+<p>Myriad uses a configuration file called <code>myriad.toml</code> which uses the <a href="https://toml.io/en/">toml format</a>.  Myriad looks in the current directory fro this file but it can be configured by placing <code>MyriadConfigFile</code> in your project file like this:</p>
+<table class="pre"><tr><td class="snippet"><pre class="fssnip"><code lang="msbuild">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Project Sdk="Microsoft.NET.Sdk"&gt;
+  &lt;PropertyGroup&gt;
+    &lt;TargetFramework&gt;net5.0&lt;/TargetFramework&gt;
+    &lt;OutputType&gt;Exe&lt;/OutputType&gt;
+    &lt;MyriadConfigFile&gt;myConfig.toml&lt;/MyriadConfigFile&gt;
+  &lt;/PropertyGroup&gt;
+...
+</code></pre></td></tr></table>
+<p>The configuration section for the built in plugins is very simple, the configuration name or key is passed in by either the plugins generator attribute, in the case of the fields plugin:</p>
+<pre class="fssnip highlighted"><code class="language-fsharp"><span class="hljs-keyword">[&lt;</span><span class="hljs-function">Generator</span><span class="hljs-keyword">.</span><span class="hljs-function">Fields</span> <span class="hljs-string">&quot;fields&quot;</span><span class="hljs-keyword">&gt;]</span>
+<span class="hljs-keyword">type</span> <span class="hljs-function">Test1</span> <span class="hljs-keyword">=</span> <span class="hljs-keyword">{</span> <span class="hljs-function">one</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="hljs-function">int</span><span class="hljs-keyword">;</span> <span class="hljs-function">two</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs2', 2)" onmouseover="showTip(event, 'fs2', 2)" class="hljs-function">string</span><span class="hljs-keyword">;</span> <span class="hljs-function">three</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs3', 3)" onmouseover="showTip(event, 'fs3', 3)" class="hljs-function">float</span><span class="hljs-keyword">;</span> <span class="hljs-function">four</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs4', 4)" onmouseover="showTip(event, 'fs4', 4)" class="hljs-function">float32</span> <span class="hljs-keyword">}</span>
+</code></pre>
+<p>The configuration key is "fields", if we now look at the <code>myriad.toml</code> file it looks like this:</p>
+<table class="pre"><tr><td class="snippet"><pre class="fssnip"><code lang="toml">namespace = "TestFields"
+</code></pre></td></tr></table>
+<p>You can see that there is a <code>namespace</code> key that is set to "TestFields".  Using an attribute like this you can configure your plugin to take further information on how to generate the code.</p>
+<p>There is another mechanism of specifying what configuration a plugin will use and that is by using an MSBuild property <code>MyriadConfigKey</code> as follows:</p>
+<table class="pre"><tr><td class="snippet"><pre class="fssnip highlighted"><code lang="xml"><span class="k">&lt;</span><span class="i">Compile</span> <span class="o">Include</span><span class="k">="ArbitaryFile.fs"</span><span class="k">&gt;</span>
+    <span class="k">&lt;</span><span class="i">MyriadFile</span><span class="k">&gt;</span>Test.txt<span class="k">&lt;/</span><span class="i">MyriadFile</span><span class="k">&gt;</span>
+    <span class="k">&lt;</span><span class="i">MyriadConfigKey</span><span class="k">&gt;</span>example1<span class="k">&lt;/</span><span class="i">MyriadConfigKey</span><span class="k">&gt;</span>
+<span class="k">&lt;/</span><span class="i">Compile</span><span class="k">&gt;</span>
+</code></pre></td></tr></table>
+<p>The configuration key <code>example1</code> would be passed to the plugin so that it could be consumed.  This is used in the <code>Myriad.Plugin.Example1</code> plugin and use uses configuration to specify the <code>namespace</code> used.</p>
+<h1>Writing plugins to consume configuration</h1>
+<p>The plugin interface receives this key via: <code>GeneratorContext</code> . <code>ConfigKey</code>:</p>
+<pre class="fssnip highlighted"><code class="language-fsharp"><span class="hljs-keyword">type</span> <span class="hljs-function">GeneratorContext</span> <span class="hljs-keyword">=</span> <span class="hljs-keyword">{</span>
+    <span class="hljs-function">ConfigKey</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs2', 5)" onmouseover="showTip(event, 'fs2', 5)" class="hljs-function">string</span> <span onmouseout="hideTip(event, 'fs5', 6)" onmouseover="showTip(event, 'fs5', 6)" class="hljs-function">option</span>
+    <span class="hljs-function">ConfigGetter</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs2', 7)" onmouseover="showTip(event, 'fs2', 7)" class="hljs-function">string</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-keyword">(</span><span onmouseout="hideTip(event, 'fs2', 8)" onmouseover="showTip(event, 'fs2', 8)" class="hljs-function">string</span> <span class="hljs-keyword">*</span> <span onmouseout="hideTip(event, 'fs6', 9)" onmouseover="showTip(event, 'fs6', 9)" class="hljs-function">obj</span><span class="hljs-keyword">)</span> <span onmouseout="hideTip(event, 'fs7', 10)" onmouseover="showTip(event, 'fs7', 10)" class="hljs-function">seq</span>
+    <span class="hljs-function">InputFileName</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs2', 11)" onmouseover="showTip(event, 'fs2', 11)" class="hljs-function">string</span>
+<span class="hljs-keyword">}</span>
+
+<span class="hljs-keyword">type</span> <span class="hljs-function">IMyriadGenerator</span> <span class="hljs-keyword">=</span>
+    <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">member</span> <span class="hljs-function">ValidInputExtensions</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs2', 12)" onmouseover="showTip(event, 'fs2', 12)" class="hljs-function">string</span> <span onmouseout="hideTip(event, 'fs7', 13)" onmouseover="showTip(event, 'fs7', 13)" class="hljs-function">seq</span>
+    <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">member</span> <span class="hljs-function">Generate</span><span class="hljs-keyword">:</span> <span class="hljs-function">GeneratorContext</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-function">FsAst</span><span class="hljs-keyword">.</span><span class="hljs-function">AstRcd</span><span class="hljs-keyword">.</span><span class="hljs-function">SynModuleOrNamespaceRcd</span> <span onmouseout="hideTip(event, 'fs8', 14)" onmouseover="showTip(event, 'fs8', 14)" class="hljs-function">list</span>
+</code></pre>
+<p>ValidInputExtensions is used so a plugin is tied to certain file types as input, if you plugin generating ast fragments from java files then you would add <code>.java</code> to the <code>ValidInputExtensions</code> implementation for example.</p>
+<pre class="fssnip highlighted"><code class="language-fsharp">    <span class="hljs-keyword">interface</span> <span class="hljs-function">IMyriadGenerator</span> <span class="hljs-keyword">with</span>
+        <span class="hljs-keyword">member</span> <span class="hljs-function">__</span><span class="hljs-keyword">.</span><span class="hljs-function">ValidInputExtensions</span> <span class="hljs-keyword">=</span> <span onmouseout="hideTip(event, 'fs7', 15)" onmouseover="showTip(event, 'fs7', 15)" class="hljs-function">seq</span> <span class="hljs-keyword">{</span><span class="hljs-string">&quot;.java&quot;</span><span class="hljs-keyword">}</span>
+        <span class="hljs-comment">//...</span>
+</code></pre>
+<p>While we are discussing the <code>IMyriadGenerator</code> interface lets discuss the <code>Generate</code> member:</p>
+<p>Generate takes a <code>GeneratorContext</code> which contains the <code>ConfigKey</code> as mentioned above, the <code>ConfigGetter</code> : <code>string -&gt; (string * obj) seq</code> which is a mean to allow access to the <code>myriad.toml</code> file, you give the function the configuration ket you wish to receive and it returns the configuration.  Finally a <code>InputFileName</code> is also passed in so you can load or parse your input files ready to generate an AST.  If you look at the included plugins you can see the mechanism for extracting and building AST fragments for reference.</p>
+<div class="tip" id="fs1">Multiple items<br />val int : value:&#39;T -&gt; int (requires member op_Explicit)<br /><br />--------------------<br />type int = int32<br /><br />--------------------<br />type int&lt;&#39;Measure&gt; = int</div>
+<div class="tip" id="fs2">Multiple items<br />val string : value:&#39;T -&gt; string<br /><br />--------------------<br />type string = System.String</div>
+<div class="tip" id="fs3">Multiple items<br />val float : value:&#39;T -&gt; float (requires member op_Explicit)<br /><br />--------------------<br />type float = System.Double<br /><br />--------------------<br />type float&lt;&#39;Measure&gt; = float</div>
+<div class="tip" id="fs4">Multiple items<br />val float32 : value:&#39;T -&gt; float32 (requires member op_Explicit)<br /><br />--------------------<br />type float32 = System.Single<br /><br />--------------------<br />type float32&lt;&#39;Measure&gt; = float32</div>
+<div class="tip" id="fs5">type &#39;T option = Option&lt;&#39;T&gt;</div>
+<div class="tip" id="fs6">type obj = System.Object</div>
+<div class="tip" id="fs7">Multiple items<br />val seq : sequence:seq&lt;&#39;T&gt; -&gt; seq&lt;&#39;T&gt;<br /><br />--------------------<br />type seq&lt;&#39;T&gt; = System.Collections.Generic.IEnumerable&lt;&#39;T&gt;</div>
+<div class="tip" id="fs8">type &#39;T list = List&lt;&#39;T&gt;</div>
+
+
+        </div>
+      </div>
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/clipboard.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/perfect-scrollbar.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/jquery.sticky.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/featherlight.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/modernizr.custom-3.6.0.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/learn.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/hugo-learn.js"></script>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/mermaid/mermaid.css"/>
+    <script src="https://moiraesoftware.github.io/myriad//static/mermaid/mermaid.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/languages/fsharp.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/tips.js"></script>
+  </body>
+</html>

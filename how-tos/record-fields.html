@@ -1,0 +1,240 @@
+<html class="js csstransforms3d">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Myriad | Record Extensions
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://moiraesoftware.github.io/myriad//static/images/favicon.png"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/nucleus.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/fontawesome-all.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/hybrid.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/featherlight.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/perfect-scrollbar.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/auto-complete.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/atom-one-dark-reasonable.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/theme.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/tips.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/atom-one-dark.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/theme-red.css"/>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <nav id="sidebar">
+      <div id="header-wrapper">
+        <div id="header">
+          <h2 id="logo">
+            Myriad
+          </h2>
+        </div>
+        <div class="searchbox">
+          <label for="search-by">
+            <i class="fas fa-search"></i>
+          </label>
+          <input data-search-input="" id="search-by" type="search" placeholder="Search..."/>
+          <span data-search-clear="">
+            <i class="fas fa-times"></i>
+          </span>
+        </div>
+        <script type="text/javascript" src="https://moiraesoftware.github.io/myriad//static/js/lunr.min.js"></script>
+        <script type="text/javascript" src="https://moiraesoftware.github.io/myriad//static/js/auto-complete.js"></script>
+        <script type="text/javascript">
+          var baseurl ='https://moiraesoftware.github.io/myriad/'
+        </script>
+        <script type="text/javascript" src="https://moiraesoftware.github.io/myriad//static/js/search.js"></script>
+      </div>
+      <div class="highlightable">
+        <ul class="topics">
+          <li id="menu-tutorials" class="dd-item menu-group-link">
+            <a>
+              Tutorials
+            </a>
+          </li>
+          <li id="menu-howtos" class="dd-item menu-group-link menu-group-link-active">
+            <a>
+              How-To Guides
+            </a>
+          </li>
+          <li id="menu-refs" class="dd-item menu-group-link">
+            <a>
+              API References
+            </a>
+          </li>
+        </ul>
+        <ul id="submenu-tutorials" class="submenu">
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//index.html" class="padding">
+              Myriad Overview
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/msbuild-usage.html" class="padding">
+              MSBuild usage
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/external-plugins.html" class="padding">
+              External Plugins
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/debugging.html" class="padding">
+              Debugging
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/configuration.html" class="padding">
+              Configuration And Plugins
+            </a>
+          </li>
+        </ul>
+        <ul id="submenu-howtos" class="submenu submenu-active">
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/record-fields.html" class="active-link padding">
+              Record Extensions
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/du-extensions.html" class="padding">
+              DU Extensions
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/lenses.html" class="padding">
+              Lenses
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/creating-a-generator.html" class="padding">
+              Creating a Generator
+            </a>
+          </li>
+        </ul>
+        <ul id="submenu-refs" class="submenu">
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//reference/Myriad.Core/index.html" class="padding">
+              Myriad.Core
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//reference/Myriad.Plugins/index.html" class="padding">
+              Myriad.Plugins
+            </a>
+          </li>
+        </ul>
+        <section id="shortcuts">
+          <h3>
+            Shortcuts
+          </h3>
+          <ul>
+            <li>
+              <a class="padding" href="/">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a class="padding" href="https://github.com/MoiraeSoftware/myriad">
+                <i class="fab fa-github"></i>
+                GitHub repo
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section id="footer">
+          <p>Built with <a href="https://github.com/ionide/Fornax">Fornax</a>
+        </section>
+      </div>
+    </nav>
+    <section id="body">
+      <div id="overlay"></div>
+      <div class="padding highlightable">
+        <div id="body-inner">
+          <span id="sidebar-toggle-span">
+            <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+              <i class="fas fa-bars"></i>
+               navigation
+            </a>
+          </span>
+          <p>The input file in this example <code>Library.fs</code> looks like this:</p>
+<pre class="fssnip highlighted"><code class="language-fsharp"><span class="hljs-keyword">namespace</span> <span class="hljs-function">Example</span>
+<span class="hljs-keyword">open</span> <span class="hljs-function">Myriad</span><span class="hljs-keyword">.</span><span class="hljs-function">Plugins</span>
+
+<span class="hljs-keyword">[&lt;</span><span class="hljs-function">Generator</span><span class="hljs-keyword">.</span><span class="hljs-function">Fields</span> <span class="hljs-string">&quot;fields&quot;</span><span class="hljs-keyword">&gt;]</span>
+<span class="hljs-keyword">type</span> <span class="hljs-function">Test1</span> <span class="hljs-keyword">=</span> <span class="hljs-keyword">{</span> <span class="hljs-function">one</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="hljs-function">int</span><span class="hljs-keyword">;</span> <span class="hljs-function">two</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs2', 2)" onmouseover="showTip(event, 'fs2', 2)" class="hljs-function">string</span><span class="hljs-keyword">;</span> <span class="hljs-function">three</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs3', 3)" onmouseover="showTip(event, 'fs3', 3)" class="hljs-function">float</span><span class="hljs-keyword">;</span> <span class="hljs-function">four</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs4', 4)" onmouseover="showTip(event, 'fs4', 4)" class="hljs-function">float32</span> <span class="hljs-keyword">}</span>
+<span class="hljs-keyword">type</span> <span class="hljs-function">Test2</span> <span class="hljs-keyword">=</span> <span class="hljs-keyword">{</span> <span class="hljs-function">one</span><span class="hljs-keyword">:</span> <span class="hljs-function">Test1</span><span class="hljs-keyword">;</span> <span class="hljs-function">two</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs2', 5)" onmouseover="showTip(event, 'fs2', 5)" class="hljs-function">string</span> <span class="hljs-keyword">}</span>
+</code></pre>
+<p>An attribute is used by the fields plugin so that the code generator knows which parts of the input AST should be consumed by the plugin.  If you had several records and you only wanted the fields plugin to operate on <code>Test1</code> then the attribute would be used like in the example about to only apply <code>Generator.Fields</code> to the <code>Test1</code> record.  Note, if you wanted a plugin that just processes the whole input then there is no need to provide such an attribute.  Myriad aims to be a library rather than a full framework that ties you to the mechanism used to input and generate code, its up to you how you generate the code, Myriad just aims to help to make this as painless and flexible as possible.</p>
+<p>To control what namespace is used as well as supplying any other information to plugins a <code>myriad.toml</code> configuration file is used.  This is specified in the generator attribute, in the example above you can see the configuration section is <code>fields</code>  <code>[&lt;Generator.Fields "fields"&gt;]</code>.  The corresponding <code>myriad.toml</code> file looks as follows:</p>
+<table class="pre"><tr><td class="snippet"><pre class="fssnip"><code lang="toml">namespace = "TestFields"
+</code></pre></td></tr></table>
+<p>The fields plugin uses only a single configuration key <code>namespace</code> to control the resulting namespace the record helpers are generated</p>
+<p>The fields plugin in this example will generate the following code at prebuild and compile the code into your assembly:</p>
+<pre class="fssnip highlighted"><code class="language-fsharp"><span class="hljs-comment">//------------------------------------------------------------------------------</span>
+<span class="hljs-comment">//        This code was generated by myriad.</span>
+<span class="hljs-comment">//        Changes to this file will be lost when the code is regenerated.</span>
+<span class="hljs-comment">//------------------------------------------------------------------------------</span>
+<span class="hljs-keyword">namespace</span> <span class="hljs-keyword">rec</span> <span class="hljs-function">TestFields</span>
+
+<span class="hljs-keyword">module</span> <span class="hljs-function">Test1</span> <span class="hljs-keyword">=</span>
+    <span class="hljs-keyword">open</span> <span class="hljs-function">Example</span>
+
+    <span class="hljs-keyword">let</span> <span class="hljs-function">one</span> <span class="hljs-keyword">(</span><span class="hljs-function">x</span> <span class="hljs-keyword">:</span> <span class="hljs-function">Test1</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span> <span class="hljs-function">x</span><span class="hljs-keyword">.</span><span class="hljs-function">one</span>
+    <span class="hljs-keyword">let</span> <span class="hljs-function">two</span> <span class="hljs-keyword">(</span><span class="hljs-function">x</span> <span class="hljs-keyword">:</span> <span class="hljs-function">Test1</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span> <span class="hljs-function">x</span><span class="hljs-keyword">.</span><span class="hljs-function">two</span>
+    <span class="hljs-keyword">let</span> <span class="hljs-function">three</span> <span class="hljs-keyword">(</span><span class="hljs-function">x</span> <span class="hljs-keyword">:</span> <span class="hljs-function">Test1</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span> <span class="hljs-function">x</span><span class="hljs-keyword">.</span><span class="hljs-function">three</span>
+    <span class="hljs-keyword">let</span> <span class="hljs-function">four</span> <span class="hljs-keyword">(</span><span class="hljs-function">x</span> <span class="hljs-keyword">:</span> <span class="hljs-function">Test1</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span> <span class="hljs-function">x</span><span class="hljs-keyword">.</span><span class="hljs-function">four</span>
+
+    <span class="hljs-keyword">let</span> <span class="hljs-function">create</span> <span class="hljs-keyword">(</span><span class="hljs-function">one</span> <span class="hljs-keyword">:</span> <span class="hljs-function">Test1</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">(</span><span class="hljs-function">two</span> <span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs2', 6)" onmouseover="showTip(event, 'fs2', 6)" class="hljs-function">string</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">(</span><span class="hljs-function">three</span> <span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs3', 7)" onmouseover="showTip(event, 'fs3', 7)" class="hljs-function">float</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">(</span><span class="hljs-function">four</span> <span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs4', 8)" onmouseover="showTip(event, 'fs4', 8)" class="hljs-function">float32</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">:</span> <span class="hljs-function">Test1</span> <span class="hljs-keyword">=</span>
+        <span class="hljs-keyword">{</span> <span class="hljs-function">one</span> <span class="hljs-keyword">=</span> <span class="hljs-function">one</span>
+          <span class="hljs-function">two</span> <span class="hljs-keyword">=</span> <span class="hljs-function">two</span>
+          <span class="hljs-function">three</span> <span class="hljs-keyword">=</span> <span class="hljs-function">three</span>
+          <span class="hljs-function">four</span> <span class="hljs-keyword">=</span> <span class="hljs-function">four</span> <span class="hljs-keyword">}</span>
+
+    <span class="hljs-keyword">let</span> <span class="hljs-function">map</span> <span class="hljs-keyword">(</span><span class="hljs-function">mapone</span> <span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs1', 9)" onmouseover="showTip(event, 'fs1', 9)" class="hljs-function">int</span> <span class="hljs-keyword">-&gt;</span> <span onmouseout="hideTip(event, 'fs1', 10)" onmouseover="showTip(event, 'fs1', 10)" class="hljs-function">int</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">(</span><span class="hljs-function">maptwo</span> <span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs2', 11)" onmouseover="showTip(event, 'fs2', 11)" class="hljs-function">string</span> <span class="hljs-keyword">-&gt;</span> <span onmouseout="hideTip(event, 'fs2', 12)" onmouseover="showTip(event, 'fs2', 12)" class="hljs-function">string</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">(</span><span class="hljs-function">mapthree</span> <span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs3', 13)" onmouseover="showTip(event, 'fs3', 13)" class="hljs-function">float</span> <span class="hljs-keyword">-&gt;</span> <span onmouseout="hideTip(event, 'fs3', 14)" onmouseover="showTip(event, 'fs3', 14)" class="hljs-function">float</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">(</span><span class="hljs-function">mapfour</span> <span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs4', 15)" onmouseover="showTip(event, 'fs4', 15)" class="hljs-function">float32</span> <span class="hljs-keyword">-&gt;</span> <span onmouseout="hideTip(event, 'fs4', 16)" onmouseover="showTip(event, 'fs4', 16)" class="hljs-function">float32</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">(</span><span class="hljs-function">record&#39;</span><span class="hljs-keyword">:</span> <span class="hljs-function">Test1</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span>
+      <span class="hljs-keyword">{</span> <span class="hljs-function">record&#39;</span> <span class="hljs-keyword">with</span>
+          <span class="hljs-function">one</span> <span class="hljs-keyword">=</span> <span class="hljs-function">mapone</span> <span class="hljs-function">record&#39;</span><span class="hljs-keyword">.</span><span class="hljs-function">one</span>
+          <span class="hljs-function">two</span> <span class="hljs-keyword">=</span> <span class="hljs-function">maptwo</span> <span class="hljs-function">record&#39;</span><span class="hljs-keyword">.</span><span class="hljs-function">two</span>
+          <span class="hljs-function">three</span> <span class="hljs-keyword">=</span> <span class="hljs-function">mapthree</span> <span class="hljs-function">record&#39;</span><span class="hljs-keyword">.</span><span class="hljs-function">three</span>
+          <span class="hljs-function">four</span> <span class="hljs-keyword">=</span> <span class="hljs-function">mapfour</span> <span class="hljs-function">record&#39;</span><span class="hljs-keyword">.</span><span class="hljs-function">four</span> <span class="hljs-keyword">}</span>
+</code></pre>
+<p>The fields plugin generates a <code>map</code> for each field in the input record, a <code>create</code> function taking each field, and a <code>map</code> function that takes one function per field in the input record.</p>
+<p>The map functions for each field are useful in situations where you just want to use a single field from a record in a lambda like a list of records:</p>
+<pre class="fssnip highlighted"><code class="language-fsharp"><span class="hljs-keyword">let</span> <span class="hljs-function">records</span> <span class="hljs-keyword">=</span> <span class="hljs-keyword">[</span><span class="hljs-keyword">{</span><span class="hljs-function">one</span> <span class="hljs-keyword">=</span> <span class="hljs-string">&quot;a&quot;</span><span class="hljs-keyword">;</span> <span class="hljs-function">two</span> <span class="hljs-keyword">=</span> <span class="hljs-string">&quot;aa&quot;</span><span class="hljs-keyword">;</span> <span class="hljs-function">three</span> <span class="hljs-keyword">=</span> <span class="hljs-number">42.0</span><span class="hljs-keyword">;</span> <span class="hljs-function">four</span> <span class="hljs-keyword">=</span> <span class="hljs-number">172.0f</span><span class="hljs-keyword">}</span>
+               <span class="hljs-keyword">{</span><span class="hljs-function">one</span> <span class="hljs-keyword">=</span> <span class="hljs-string">&quot;b&quot;</span><span class="hljs-keyword">;</span> <span class="hljs-function">two</span> <span class="hljs-keyword">=</span> <span class="hljs-string">&quot;bb&quot;</span><span class="hljs-keyword">;</span> <span class="hljs-function">three</span> <span class="hljs-keyword">=</span> <span class="hljs-number">42.0</span><span class="hljs-keyword">;</span> <span class="hljs-function">four</span> <span class="hljs-keyword">=</span> <span class="hljs-number">172.0f</span><span class="hljs-keyword">}</span><span class="hljs-keyword">]</span>
+ <span class="hljs-function">records</span> <span class="hljs-keyword">|&gt;</span> <span onmouseout="hideTip(event, 'fs5', 17)" onmouseover="showTip(event, 'fs5', 17)" class="hljs-function">List</span><span class="hljs-keyword">.</span><span onmouseout="hideTip(event, 'fs6', 18)" onmouseover="showTip(event, 'fs6', 18)" class="hljs-function">sortBy</span> <span class="hljs-function">Test1</span><span class="hljs-keyword">.</span><span class="hljs-function">one</span>
+</code></pre>
+<div class="tip" id="fs1">Multiple items<br />val int : value:&#39;T -&gt; int (requires member op_Explicit)<br /><br />--------------------<br />type int = int32<br /><br />--------------------<br />type int&lt;&#39;Measure&gt; = int</div>
+<div class="tip" id="fs2">Multiple items<br />val string : value:&#39;T -&gt; string<br /><br />--------------------<br />type string = System.String</div>
+<div class="tip" id="fs3">Multiple items<br />val float : value:&#39;T -&gt; float (requires member op_Explicit)<br /><br />--------------------<br />type float = System.Double<br /><br />--------------------<br />type float&lt;&#39;Measure&gt; = float</div>
+<div class="tip" id="fs4">Multiple items<br />val float32 : value:&#39;T -&gt; float32 (requires member op_Explicit)<br /><br />--------------------<br />type float32 = System.Single<br /><br />--------------------<br />type float32&lt;&#39;Measure&gt; = float32</div>
+<div class="tip" id="fs5">Multiple items<br />module List<br /><br />from Microsoft.FSharp.Collections<br /><br />--------------------<br />type List&lt;&#39;T&gt; =<br />&#160;&#160;| ( [] )<br />&#160;&#160;| ( :: ) of Head: &#39;T * Tail: &#39;T list<br />&#160;&#160;&#160;&#160;interface IReadOnlyList&lt;&#39;T&gt;<br />&#160;&#160;&#160;&#160;interface IReadOnlyCollection&lt;&#39;T&gt;<br />&#160;&#160;&#160;&#160;interface IEnumerable<br />&#160;&#160;&#160;&#160;interface IEnumerable&lt;&#39;T&gt;<br />&#160;&#160;&#160;&#160;member GetReverseIndex : rank:int * offset:int -&gt; int<br />&#160;&#160;&#160;&#160;member GetSlice : startIndex:int option * endIndex:int option -&gt; &#39;T list<br />&#160;&#160;&#160;&#160;member Head : &#39;T<br />&#160;&#160;&#160;&#160;member IsEmpty : bool<br />&#160;&#160;&#160;&#160;member Item : index:int -&gt; &#39;T with get<br />&#160;&#160;&#160;&#160;member Length : int<br />&#160;&#160;&#160;&#160;...</div>
+<div class="tip" id="fs6">val sortBy : projection:(&#39;T -&gt; &#39;Key) -&gt; list:&#39;T list -&gt; &#39;T list (requires comparison)</div>
+
+
+        </div>
+      </div>
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/clipboard.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/perfect-scrollbar.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/jquery.sticky.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/featherlight.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/modernizr.custom-3.6.0.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/learn.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/hugo-learn.js"></script>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/mermaid/mermaid.css"/>
+    <script src="https://moiraesoftware.github.io/myriad//static/mermaid/mermaid.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/languages/fsharp.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/tips.js"></script>
+  </body>
+</html>

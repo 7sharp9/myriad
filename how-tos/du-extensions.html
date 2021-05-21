@@ -1,0 +1,266 @@
+<html class="js csstransforms3d">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Myriad | DU Extensions
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://moiraesoftware.github.io/myriad//static/images/favicon.png"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/nucleus.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/fontawesome-all.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/hybrid.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/featherlight.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/perfect-scrollbar.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/auto-complete.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/atom-one-dark-reasonable.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/theme.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/tips.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/atom-one-dark.min.css"/>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/css/theme-red.css"/>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <nav id="sidebar">
+      <div id="header-wrapper">
+        <div id="header">
+          <h2 id="logo">
+            Myriad
+          </h2>
+        </div>
+        <div class="searchbox">
+          <label for="search-by">
+            <i class="fas fa-search"></i>
+          </label>
+          <input data-search-input="" id="search-by" type="search" placeholder="Search..."/>
+          <span data-search-clear="">
+            <i class="fas fa-times"></i>
+          </span>
+        </div>
+        <script type="text/javascript" src="https://moiraesoftware.github.io/myriad//static/js/lunr.min.js"></script>
+        <script type="text/javascript" src="https://moiraesoftware.github.io/myriad//static/js/auto-complete.js"></script>
+        <script type="text/javascript">
+          var baseurl ='https://moiraesoftware.github.io/myriad/'
+        </script>
+        <script type="text/javascript" src="https://moiraesoftware.github.io/myriad//static/js/search.js"></script>
+      </div>
+      <div class="highlightable">
+        <ul class="topics">
+          <li id="menu-tutorials" class="dd-item menu-group-link">
+            <a>
+              Tutorials
+            </a>
+          </li>
+          <li id="menu-howtos" class="dd-item menu-group-link menu-group-link-active">
+            <a>
+              How-To Guides
+            </a>
+          </li>
+          <li id="menu-refs" class="dd-item menu-group-link">
+            <a>
+              API References
+            </a>
+          </li>
+        </ul>
+        <ul id="submenu-tutorials" class="submenu">
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//index.html" class="padding">
+              Myriad Overview
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/msbuild-usage.html" class="padding">
+              MSBuild usage
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/external-plugins.html" class="padding">
+              External Plugins
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/debugging.html" class="padding">
+              Debugging
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//tutorials/configuration.html" class="padding">
+              Configuration And Plugins
+            </a>
+          </li>
+        </ul>
+        <ul id="submenu-howtos" class="submenu submenu-active">
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/record-fields.html" class="padding">
+              Record Extensions
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/du-extensions.html" class="active-link padding">
+              DU Extensions
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/lenses.html" class="padding">
+              Lenses
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//how-tos/creating-a-generator.html" class="padding">
+              Creating a Generator
+            </a>
+          </li>
+        </ul>
+        <ul id="submenu-refs" class="submenu">
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//reference/Myriad.Core/index.html" class="padding">
+              Myriad.Core
+            </a>
+          </li>
+          <li>
+            <a href="https://moiraesoftware.github.io/myriad//reference/Myriad.Plugins/index.html" class="padding">
+              Myriad.Plugins
+            </a>
+          </li>
+        </ul>
+        <section id="shortcuts">
+          <h3>
+            Shortcuts
+          </h3>
+          <ul>
+            <li>
+              <a class="padding" href="/">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a class="padding" href="https://github.com/MoiraeSoftware/myriad">
+                <i class="fab fa-github"></i>
+                GitHub repo
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section id="footer">
+          <p>Built with <a href="https://github.com/ionide/Fornax">Fornax</a>
+        </section>
+      </div>
+    </nav>
+    <section id="body">
+      <div id="overlay"></div>
+      <div class="padding highlightable">
+        <div id="body-inner">
+          <span id="sidebar-toggle-span">
+            <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+              <i class="fas fa-bars"></i>
+               navigation
+            </a>
+          </span>
+          <p>The input file in this example <code>Library.fs</code> looks like this:</p>
+<pre class="fssnip highlighted"><code class="language-fsharp"><span class="hljs-keyword">namespace</span> <span class="hljs-function">Example</span>
+<span class="hljs-keyword">open</span> <span class="hljs-function">Myriad</span><span class="hljs-keyword">.</span><span class="hljs-function">Plugins</span>
+
+<span class="hljs-keyword">[&lt;</span><span class="hljs-function">Generator</span><span class="hljs-keyword">.</span><span class="hljs-function">DuCases</span> <span class="hljs-string">&quot;dus&quot;</span> <span class="hljs-keyword">&gt;]</span>
+<span class="hljs-keyword">type</span> <span class="hljs-function">Currency</span> <span class="hljs-keyword">=</span>
+<span class="hljs-keyword">|</span> <span class="hljs-function">CAD</span>
+<span class="hljs-keyword">|</span> <span class="hljs-function">PLN</span>
+<span class="hljs-keyword">|</span> <span class="hljs-function">EUR</span>
+<span class="hljs-keyword">|</span> <span class="hljs-function">USD</span>
+<span class="hljs-keyword">|</span> <span class="hljs-function">Custom</span> <span class="hljs-keyword">of</span> <span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="hljs-function">string</span>
+</code></pre>
+<p>An attribute is used by the plugin so that the code generator plugin knows which parts of the input AST are to be used by the plugin.  If you had several records and you only wanted the fields plugin to operate on <code>Currency</code> then the attribute would be used like in the example about to only apply <code>Generator.DuCases</code> to <code>Currency</code>.  Note, if you wanted a plugin that just needs the whole input AST then there is no need to provide an input.  Myriad aims to be a library rather than a full framework that ties you to the mechanism used to input and generate code.</p>
+<p>To control what namespace is used as well as supplying any other information to plugins a <code>myriad.toml</code> configuration file is used.  This is specified in the generator attribute, in the example above you can see the configuration section is <code>dus</code>  <code>[&lt;Generator.DuCases "dus" &gt;]</code>.  The corresponding <code>myriad.toml</code> file looks as follows:</p>
+<table class="pre"><tr><td class="snippet"><pre class="fssnip"><code lang="toml">namespace = "TestDus"
+</code></pre></td></tr></table>
+<p>The DuCases plugin uses only a single configuration key <code>namespace</code> to control the resulting namespace the DuCases are generated</p>
+<p>The fields plugin in this example will generate the following code at prebuild time and compile the code into your assembly:</p>
+<pre class="fssnip highlighted"><code class="language-fsharp"><span class="hljs-comment">//------------------------------------------------------------------------------</span>
+<span class="hljs-comment">//        This code was generated by myriad.</span>
+<span class="hljs-comment">//        Changes to this file will be lost when the code is regenerated.</span>
+<span class="hljs-comment">//------------------------------------------------------------------------------</span>
+<span class="hljs-keyword">namespace</span> <span class="hljs-keyword">rec</span> <span class="hljs-function">TestDus</span>
+
+<span class="hljs-keyword">module</span> <span class="hljs-function">Currency</span> <span class="hljs-keyword">=</span>
+    <span class="hljs-keyword">open</span> <span class="hljs-function">Input</span>
+
+    <span class="hljs-keyword">let</span> <span class="hljs-function">toString</span> <span class="hljs-keyword">(</span><span class="hljs-function">x</span><span class="hljs-keyword">:</span> <span class="hljs-function">Currency</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span>
+        <span class="hljs-keyword">match</span> <span class="hljs-function">x</span> <span class="hljs-keyword">with</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">CAD</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-string">&quot;CAD&quot;</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">PLN</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-string">&quot;PLN&quot;</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">EUR</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-string">&quot;EUR&quot;</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">USD</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-string">&quot;USD&quot;</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">Custom</span> <span class="hljs-function">_</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-string">&quot;Custom&quot;</span>
+
+    <span class="hljs-keyword">let</span> <span class="hljs-function">fromString</span> <span class="hljs-keyword">(</span><span class="hljs-function">x</span><span class="hljs-keyword">:</span> <span onmouseout="hideTip(event, 'fs1', 2)" onmouseover="showTip(event, 'fs1', 2)" class="hljs-function">string</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span>
+        <span class="hljs-keyword">match</span> <span class="hljs-function">x</span> <span class="hljs-keyword">with</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-string">&quot;CAD&quot;</span> <span class="hljs-keyword">-&gt;</span> <span onmouseout="hideTip(event, 'fs2', 3)" onmouseover="showTip(event, 'fs2', 3)" class="hljs-function">Some</span> <span class="hljs-function">CAD</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-string">&quot;PLN&quot;</span> <span class="hljs-keyword">-&gt;</span> <span onmouseout="hideTip(event, 'fs2', 4)" onmouseover="showTip(event, 'fs2', 4)" class="hljs-function">Some</span> <span class="hljs-function">PLN</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-string">&quot;EUR&quot;</span> <span class="hljs-keyword">-&gt;</span> <span onmouseout="hideTip(event, 'fs2', 5)" onmouseover="showTip(event, 'fs2', 5)" class="hljs-function">Some</span> <span class="hljs-function">EUR</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-string">&quot;USD&quot;</span> <span class="hljs-keyword">-&gt;</span> <span onmouseout="hideTip(event, 'fs2', 6)" onmouseover="showTip(event, 'fs2', 6)" class="hljs-function">Some</span> <span class="hljs-function">USD</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">_</span> <span class="hljs-keyword">-&gt;</span> <span onmouseout="hideTip(event, 'fs3', 7)" onmouseover="showTip(event, 'fs3', 7)" class="hljs-function">None</span>
+
+    <span class="hljs-keyword">let</span> <span class="hljs-function">toTag</span> <span class="hljs-keyword">(</span><span class="hljs-function">x</span><span class="hljs-keyword">:</span> <span class="hljs-function">Currency</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span>
+        <span class="hljs-keyword">match</span> <span class="hljs-function">x</span> <span class="hljs-keyword">with</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">CAD</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-number">0</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">PLN</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-number">1</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">EUR</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-number">2</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">USD</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-number">3</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">Custom</span> <span class="hljs-function">_</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-number">4</span>
+
+    <span class="hljs-keyword">let</span> <span class="hljs-function">isCAD</span> <span class="hljs-keyword">(</span><span class="hljs-function">x</span><span class="hljs-keyword">:</span> <span class="hljs-function">Currency</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span>
+        <span class="hljs-keyword">match</span> <span class="hljs-function">x</span> <span class="hljs-keyword">with</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">CAD</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-keyword">true</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">_</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-keyword">false</span>
+
+    <span class="hljs-keyword">let</span> <span class="hljs-function">isPLN</span> <span class="hljs-keyword">(</span><span class="hljs-function">x</span><span class="hljs-keyword">:</span> <span class="hljs-function">Currency</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span>
+        <span class="hljs-keyword">match</span> <span class="hljs-function">x</span> <span class="hljs-keyword">with</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">PLN</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-keyword">true</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">_</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-keyword">false</span>
+
+    <span class="hljs-keyword">let</span> <span class="hljs-function">isEUR</span> <span class="hljs-keyword">(</span><span class="hljs-function">x</span><span class="hljs-keyword">:</span> <span class="hljs-function">Currency</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span>
+        <span class="hljs-keyword">match</span> <span class="hljs-function">x</span> <span class="hljs-keyword">with</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">EUR</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-keyword">true</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">_</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-keyword">false</span>
+
+    <span class="hljs-keyword">let</span> <span class="hljs-function">isUSD</span> <span class="hljs-keyword">(</span><span class="hljs-function">x</span><span class="hljs-keyword">:</span> <span class="hljs-function">Currency</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span>
+        <span class="hljs-keyword">match</span> <span class="hljs-function">x</span> <span class="hljs-keyword">with</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">USD</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-keyword">true</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">_</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-keyword">false</span>
+
+    <span class="hljs-keyword">let</span> <span class="hljs-function">isCustom</span> <span class="hljs-keyword">(</span><span class="hljs-function">x</span><span class="hljs-keyword">:</span> <span class="hljs-function">Currency</span><span class="hljs-keyword">)</span> <span class="hljs-keyword">=</span>
+        <span class="hljs-keyword">match</span> <span class="hljs-function">x</span> <span class="hljs-keyword">with</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">Custom</span> <span class="hljs-function">_</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-keyword">true</span>
+        <span class="hljs-keyword">|</span> <span class="hljs-function">_</span> <span class="hljs-keyword">-&gt;</span> <span class="hljs-keyword">false</span>
+</code></pre>
+<div class="tip" id="fs1">Multiple items<br />val string : value:&#39;T -&gt; string<br /><br />--------------------<br />type string = System.String</div>
+<div class="tip" id="fs2">union case Option.Some: Value: &#39;T -&gt; Option&lt;&#39;T&gt;</div>
+<div class="tip" id="fs3">union case Option.None: Option&lt;&#39;T&gt;</div>
+
+
+        </div>
+      </div>
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/clipboard.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/perfect-scrollbar.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/jquery.sticky.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/featherlight.min.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/modernizr.custom-3.6.0.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/learn.js"></script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/hugo-learn.js"></script>
+    <link rel="stylesheet" href="https://moiraesoftware.github.io/myriad//static/mermaid/mermaid.css"/>
+    <script src="https://moiraesoftware.github.io/myriad//static/mermaid/mermaid.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/languages/fsharp.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://moiraesoftware.github.io/myriad//static/js/tips.js"></script>
+  </body>
+</html>
